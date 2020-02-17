@@ -26,7 +26,7 @@ class Projects extends Component {
                             strip steak pork.
                         </CardText>
                         <CardActions>
-                            <Button colored>Github</Button>
+                            <Button colored href="https://github.com/Nosp1" target="_blank">Github</Button>
                             <Button colored>CodePen</Button>
                             <Button colored>LiveDemo</Button>
                         </CardActions>
@@ -104,7 +104,6 @@ class Projects extends Component {
                         <div className="content">{this.toggleCategories()}</div>
                     </Cell>
                 </Grid>
-
             </div>
         )
     }
