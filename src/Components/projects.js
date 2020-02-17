@@ -17,7 +17,7 @@ class Projects extends Component {
                             color: '#fff',
                             height: '176px',
                             background: 'url(https://reactjs.org/logo-og.png) center / cover'
-                        }}>React Project 1</CardTitle>
+                        }}>Dnd: Character Creator</CardTitle>
                         <CardText>
                             Bacon ipsum dolor amet leberkas ground round biltong landjaeger, rump doner burgdoggen
                             bresaola
@@ -26,7 +26,7 @@ class Projects extends Component {
                             strip steak pork.
                         </CardText>
                         <CardActions>
-                            <Button colored href="https://github.com/Nosp1" target="_blank">Github</Button>
+                            <Button colored href="https://github.com/Nosp1/Dnd" target="_blank">Github</Button>
                             <Button colored>CodePen</Button>
                             <Button colored>LiveDemo</Button>
                         </CardActions>
