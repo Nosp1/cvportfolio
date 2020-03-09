@@ -12,7 +12,7 @@ class Projects extends Component {
             return (
                 <div className="projects-grid">
                     {/* Project 1 */}
-                    <Card className="card-box" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                         <CardTitle className="card-title" style={{
                             color: 'white',
                             height: '176px',
@@ -29,7 +29,9 @@ class Projects extends Component {
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share"/>
                         </CardMenu>
-                    </Card> <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                    </Card>
+                    {/* Project 2*/}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                     <CardTitle className="card-title" style={{
                         color: 'white',
                         height: '176px',
@@ -46,7 +48,9 @@ class Projects extends Component {
                     <CardMenu style={{color: '#fff'}}>
                         <IconButton name="share"/>
                     </CardMenu>
-                </Card> <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                </Card>
+                    {/* Project 3 */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                     <CardTitle style={{
                         color: '#fff',
                         height: '176px',
