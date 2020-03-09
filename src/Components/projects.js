@@ -13,41 +13,35 @@ class Projects extends Component {
                 <div className="projects-grid">
                     {/* Project 1 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                        <CardTitle style={{
-                            color: '#fff',
+                        <CardTitle className="card-title" style={{
+                            color: 'white',
                             height: '176px',
-                            background: 'url(https://reactjs.org/logo-og.png) center / cover'
-                        }}>Dnd: Character Creator</CardTitle>
+                            background: 'black url(https://github.com/Nosp1/Dnd/raw/master/logo.png) center / cover'
+                        }}>Dnd: Character Generator</CardTitle>
                         <CardText>
-                            Bacon ipsum dolor amet leberkas ground round biltong landjaeger, rump doner burgdoggen
-                            bresaola
-                            strip steak spare ribs sirloin cupim shoulder salami. Tail tenderloin andouille tongue
-                            sausage
-                            strip steak pork.
+                            StoryTeller is a open-source minimalistic character-creator right in your terminal for your favorite
+                            roleplaying game. The process of creating a character can be tedious and time consuming.
+                            Storyteller allows you to have a playable character within minutes. Save your character to JSON.
                         </CardText>
-                        <CardActions>
-                            <Button colored href="https://github.com/Nosp1/Dnd" target="_blank">Github</Button>
-                            <Button colored>CodePen</Button>
-                            <Button colored>LiveDemo</Button>
+                        <CardActions style={{textAlign: 'center' }}>
+                            <Button  colored href="https://github.com/Nosp1/Dnd" target="_blank" >Github</Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share"/>
                         </CardMenu>
                     </Card> <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{
-                        color: '#fff',
+                    <CardTitle className="card-title" style={{
+                        color: 'white',
                         height: '176px',
-                        background: 'url(https://reactjs.org/logo-og.png) center / cover'
-                    }}>React Project 2</CardTitle>
+                        background: 'url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80) center / cover'
+                    }}> Roombooking System</CardTitle>
                     <CardText>
-                        Bacon ipsum dolor amet leberkas ground round biltong landjaeger, rump doner burgdoggen bresaola
-                        strip steak spare ribs sirloin cupim shoulder salami. Tail tenderloin andouille tongue sausage
-                        strip steak pork.
+                        A complete system that allows a user to book an available room in the system.
+                        The system allows users to easily book, rebook and keep track over their bookings.
+                        Features an admin-hub for easy management of the system and emailing-services to inform your clients.
                     </CardText>
-                    <CardActions>
-                        <Button colored>Github</Button>
-                        <Button colored>CodePen</Button>
-                        <Button colored>LiveDemo</Button>
+                    <CardActions style={{textAlign: 'center' }}>
+                        <Button colored href="https://github.com/Nosp1/Gruppe10">Github</Button>
                     </CardActions>
                     <CardMenu style={{color: '#fff'}}>
                         <IconButton name="share"/>
@@ -63,10 +57,8 @@ class Projects extends Component {
                         strip steak spare ribs sirloin cupim shoulder salami. Tail tenderloin andouille tongue sausage
                         strip steak pork.
                     </CardText>
-                    <CardActions>
+                    <CardActions style={{textAlign: 'center' }}>
                         <Button colored>Github</Button>
-                        <Button colored>CodePen</Button>
-                        <Button colored>LiveDemo</Button>
                     </CardActions>
                     <CardMenu style={{color: '#fff'}}>
                         <IconButton name="share"/>
@@ -76,15 +68,11 @@ class Projects extends Component {
             )
         } else if (this.state.activeTab === 1) {
             return (
-                <div><h1>This is Java</h1></div>
+                <div><h1>This is React</h1></div>
             )
         } else if (this.state.activeTab === 2) {
             return (
                 <div><h1>This is MySQL</h1></div>
-            )
-        } else if (this.state.activeTab === 3) {
-            return (
-                <div><h1>This is DnD</h1></div>
             )
         }
     }
@@ -93,10 +81,9 @@ class Projects extends Component {
         return (
             <div className="category-tabs">
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
-                    <Tab>React</Tab>
                     <Tab>Java</Tab>
+                    <Tab>React</Tab>
                     <Tab>MySQL</Tab>
-                    <Tab>DnD</Tab>
                 </Tabs>
 
                 <Grid>

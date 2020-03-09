@@ -68,3 +68,9 @@
     font-size: 5em;
     padding: 8px;
 }
+ .card-title {
+    text-shadow: -1px 1px 1px rgb(66, 66, 66);
+     font-size: large;
+
+
+}
