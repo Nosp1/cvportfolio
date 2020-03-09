@@ -17,8 +17,30 @@
     height: 100%;
 }
 
+/*
+Grid for elements.
+ */
 .projects-grid {
     display: flex;
+
+}
+
+/*
+all cards in grid
+ */
+.project-cards {
+    display: flex;
+    margin: auto;
+}
+
+/*
+specific card in grid
+ */
+.project-card {
+    margin: 10px;
+    min-width: 450px;
+    width: auto;
+    height: auto;
 }
 
 .avatar-img {
@@ -67,4 +89,15 @@
     color: white;
     font-size: 5em;
     padding: 8px;
+}
+
+.card-title {
+    text-shadow: -3px 3px 3px rgb(66, 66, 66);
+    font-size: large;
+
+
+}
+
+#dnd {
+    background: black url(https://raw.githubusercontent.com/Nosp1/cvportfolio/feature_projects/logonew.png) no-repeat;
 }
