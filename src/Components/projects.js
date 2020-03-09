@@ -12,12 +12,12 @@ class Projects extends Component {
             return (
                 <div className="projects-grid">
                     {/* Project 1 */}
-                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                    <Card className="card-box" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                         <CardTitle className="card-title" style={{
                             color: 'white',
                             height: '176px',
                             background: 'black url(https://github.com/Nosp1/Dnd/raw/master/logo.png) center / cover'
-                        }}>Dnd: Character Generator</CardTitle>
+                        }}>DnD: Character Generator</CardTitle>
                         <CardText>
                             StoryTeller is a open-source minimalistic character-creator right in your terminal for your favorite
                             roleplaying game. The process of creating a character can be tedious and time consuming.
@@ -33,7 +33,7 @@ class Projects extends Component {
                     <CardTitle className="card-title" style={{
                         color: 'white',
                         height: '176px',
-                        background: 'url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80) center / cover'
+                        background: 'url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80) center / cover',
                     }}> Roombooking System</CardTitle>
                     <CardText>
                         A complete system that allows a user to book an available room in the system.
