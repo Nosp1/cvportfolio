@@ -14,10 +14,9 @@ class Projects extends Component {
                     {/* Project 1 */}
                     <div className="project-cards">
                         <Card className="project-card" shadow={5}>
-                            <CardTitle className="card-title" style={{
+                            <CardTitle className="card-title" id="dnd" style={{
                                 color: 'white',
                                 height: '176px',
-                                background: 'black url(/Users/trym/go/src/github.com/Nosp1/Trym/portfolio/cvportfolio/logo.png) center / cover'
                             }}>DnD: Character Generator</CardTitle>
                             <CardText>
                                 StoryTeller is a open-source minimalistic character-creator right in your terminal for
