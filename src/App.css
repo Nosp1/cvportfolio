@@ -1,14 +1,61 @@
-.header-color {
-    background: #360033; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #0b8793, #360033); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*
+Color palette
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    /* Main Primary colors */
+    --primary-background-1: #0B283C;
+    --primary-background-2: #2A4456;
+    --primary-background-3: #536A79;
+    --primary-background-4: #989FA4;
+    /* Main Secondary Colors */
+    --secondary-color-1: #32345D;
+    --secondary-color-2: #32345D;
+    --secondary-color-3: #010328;
+    --secondary-color-4: #101341;
+    --secondary-color-5: #5D5F84;
+    --secondary-color-6: #A7A7B2;
+    --secondary-color-7: #2B5D45;
+    --secondary-color-8: #002815;
+    --secondary-color-9: #084126;
+    /* Main tertiary colors */
+    --tertiary-color-1: #57846E;
+    --tertiary-color-2: #A5B2AC;
+
 
 }
 
+
+.header-color {
+    background: var(--primary-background-1); /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, var(--primary-background-1), var(--secondary-color-2)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, var(--primary-background-1), var(--secondary-color-2)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.navigator :hover {
+    background: var(--primary-background-2);
+}
+
+
+
 .landing-grid {
-    background: #360033; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #0b8793, #360033); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--primary-background-1); /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left,var(--primary-background-1), var(--secondary-color-2)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, var(--primary-background-1), var(--secondary-color-2)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
     position: fixed;
     top: 0;
@@ -113,6 +160,7 @@ Contact page
     justify-content: center;
     padding-top: 2em;
 }
+
 .contact-grid {
     text-align: center;
     justify-content: center;
@@ -122,18 +170,22 @@ Contact page
     color: black;
     margin-bottom: 20px;
 }
+
 .contact-grid h2 {
-    font-family: 'anton', sans-serif ;
+    font-family: 'anton', sans-serif;
 }
+
 .contact-grid p {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Oxygen ', sans-serif;
     font-weight: bold;
 }
+
 .contact-grid hr {
     border-top: 5px dot-dash black;
     width: 50%;
     margin: auto;
 }
+
 .contact-list i {
     font-size: 66px;
     padding-right: 5rem;
