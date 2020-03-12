@@ -9,8 +9,7 @@ class App extends Component {
         return (
             <div>
                 <Layout>
-                    <Header className="header-color"  title="Trym Staurheim"  scroll>
-
+                    <Header className="header-color"   title={<Link className="title" to="/">Trym Staurheim</Link>} scroll>
                         <Navigation className="navigator">
                             <Link to="/resume">Resume</Link>
                             <Link to="/aboutme">About Me</Link>
@@ -18,7 +17,7 @@ class App extends Component {
                             <Link to="/contact">Contact</Link>
                         </Navigation>
                     </Header>
-                    <Drawer title="Index">
+                    <Drawer toggle title="Index">
                         <Navigation>
                             <Link to="/resume">Resume</Link>
                             <Link to="/aboutme">About Me</Link>

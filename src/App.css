@@ -1,20 +1,6 @@
 /*
 Color palette
-
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
 :root {
     /* Main Primary colors */
     --primary-background-1: #0B283C;
@@ -34,10 +20,7 @@ Color palette
     /* Main tertiary colors */
     --tertiary-color-1: #57846E;
     --tertiary-color-2: #A5B2AC;
-
-
 }
-
 
 .header-color {
     background: var(--primary-background-1); /* fallback for old browsers */
@@ -46,15 +29,38 @@ Color palette
 
 }
 
-.navigator :hover {
-    background: var(--primary-background-2);
+.header-color + div  {
+    background: var(--primary-background-1);
+    color: var(--secondary-color-6);
+
+}
+.header-color + a {
+    color: var(--secondary-color-6)
 }
 
+.title {
+    color: var(--secondary-color-6);
+    text-decoration: none;
+    font-size: 33px;
+
+}
+
+.navigator a {
+    color: var(--primary-background-2);
+    background: linear-gradient(to left, var(--primary-background-4, var(--secondary-color-2)));
+    border: 5px solid linear-gradient(to left, var(--secondary-color-5), var(--primary-background-4));
+    opacity: 0.8;
+}
+
+.navigator :hover {
+    background: var(--secondary-color-7);
+
+}
 
 
 .landing-grid {
     background: var(--primary-background-1); /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left,var(--primary-background-1), var(--secondary-color-2)); /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to left, var(--primary-background-1), var(--secondary-color-2)); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, var(--primary-background-1), var(--secondary-color-2)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
     position: fixed;
