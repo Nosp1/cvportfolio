@@ -17,7 +17,7 @@ class App extends Component {
                             <Link to="/contact">Contact</Link>
                         </Navigation>
                     </Header>
-                    <Drawer toggle title="Index">
+                    <Drawer className="header-drawer" toggle title="Index" ripple>
                         <Navigation>
                             <Link to="/resume">Resume</Link>
                             <Link to="/aboutme">About Me</Link>
@@ -25,7 +25,7 @@ class App extends Component {
                             <Link to="/contact">Contact</Link>
                         </Navigation>
                     </Drawer>
-                    <Content>
+                    <Content className="content">
                         <div className="page-content"/>
                         <Main>
 

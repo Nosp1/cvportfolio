@@ -34,8 +34,14 @@ Color palette
     color: var(--secondary-color-6);
 
 }
+
 .header-color + a {
-    color: var(--secondary-color-6)
+    color: var(--secondary-color-6);
+    font-size: 22px;
+}
+.header-color a:hover {
+    color: var(--secondary-color-4);
+
 }
 
 .title {
@@ -48,12 +54,11 @@ Color palette
 .navigator a {
     color: var(--primary-background-2);
     background: linear-gradient(to left, var(--primary-background-4, var(--secondary-color-2)));
-    border: 5px solid linear-gradient(to left, var(--secondary-color-5), var(--primary-background-4));
-    opacity: 0.8;
+
 }
 
 .navigator :hover {
-    background: var(--secondary-color-7);
+    background: var(--primary-background-2);
 
 }
 
@@ -77,6 +82,13 @@ Grid for elements.
     display: flex;
 
 }
+.content {
+    background: var(--primary-background-1); /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, var(--primary-background-1), var(--secondary-color-2)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, var(--primary-background-1), var(--secondary-color-2)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 
 /*
 all cards in grid
@@ -95,13 +107,25 @@ specific card in grid
     width: auto;
     height: auto;
 }
+.category-tabs {
+    background: -webkit-linear-gradient(to left, var(--primary-background-1), var(--secondary-color-2)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, var(--primary-background-1), var(--secondary-color-2)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+.category-tabs span:hover {
+    background: var(--secondary-color-6);
+}
+#tabs a {
+    color: var(--secondary-color-6) ;
+    font-size:20px;
+}
 .avatar-img {
     margin-top: 50px;
     height: 300px;
     border-radius: 100%;
     padding: 1px;
-    background-color: white;
+    background-color: var(--secondary-color-2);
 }
 
 .banner-text {
@@ -143,6 +167,10 @@ specific card in grid
     font-size: 5em;
     padding: 8px;
 }
+.social-links i:hover{
+    background: var(--primary-background-2);
+    opacity: 0.5;
+}
 
 .card-title {
     text-shadow: -3px 3px 3px rgb(66, 66, 66);
@@ -175,6 +203,7 @@ Contact page
     background: white;
     color: black;
     margin-bottom: 20px;
+
 }
 
 .contact-grid h2 {
