@@ -69,7 +69,7 @@ class Projects extends Component {
     render() {
         return (
             <div className="category-tabs">
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
+                <Tabs id="tabs" activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
                     <Tab>Java</Tab>
                     <Tab>React</Tab>
                     <Tab>MySQL</Tab>
