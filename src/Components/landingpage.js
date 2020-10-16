@@ -17,7 +17,7 @@ class Landing extends Component {
                             <h1>Full Stack Student</h1>
 
                             <hr/>
-                            <p>Java | MySQL/Oracle | Git | HTML/CSS</p>
+                            <p>Java | React | MySQL/PlSQL | Git | HTML | CSS</p>
                             <div className="social-links">
                                 {/* Linkedin */}
                                 <a href="http://www.google.no" rel="noopener noreferrer" target="_blank">
